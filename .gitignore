@@ -34,9 +34,9 @@ Thumbs.db
 # ================================
 # Data (RAW & PROCESSED)
 # ================================
-dataset/images
-dataset/preprocessed
-dataset/myntradataset/images
+dataset/raw/
+dataset/processed/
+
 # ================================
 # Training Outputs
 # ================================
