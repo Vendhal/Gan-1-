@@ -1,5 +1,5 @@
 # ================================
-# Python
+# Python bytecode / cache
 # ================================
 __pycache__/
 *.py[cod]
@@ -9,7 +9,7 @@ __pycache__/
 .Python
 
 # ================================
-# Virtual Environments
+# Virtual environments
 # ================================
 venv/
 .env/
@@ -32,36 +32,39 @@ ENV/
 Thumbs.db
 
 # ================================
-# Data (RAW & PROCESSED)
+# Raw datasets (DO NOT COMMIT)
 # ================================
-dataset/raw/
-dataset/processed/
+dataset/images/
+dataset/preprocessed/
+dataset/myntradataset/images/
 
 # ================================
-# Training Outputs
+# Training artifacts (large)
 # ================================
 checkpoints/
-samples/
-logs/
-tensorboard/
 runs/
 
 # ================================
-# Model Weights
+# TensorBoard logs (optional)
 # ================================
-*.h5
-*.keras
-*.pt
-*.pth
-*.onnx
+tensorboard/
 
 # ================================
-# Generated Files
+# Generated ZIPs / archives
 # ================================
 *.zip
 *.tar.gz
 
 # ================================
-# Notebooks (optional)
+# Jupyter
 # ================================
 .ipynb_checkpoints/
+
+# ================================
+# Files
+# ================================
+*.pt
+*.pth
+*.h5
+*.keras
+*.onnx
