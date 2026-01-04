@@ -1,0 +1,4 @@
+image_size: 64
+channels: 1
+train_split: 0.95
+normalization: tanh
