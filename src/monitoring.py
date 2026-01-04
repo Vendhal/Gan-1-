@@ -19,11 +19,15 @@ if not os.path.exists(LOG_FILE):
 
 
 def log_inference(model_version, num_images, latency, status):
-    with open(LOG_FILE, "a", newline="") as f:
-        csv.writer(f).writerow([
-            datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-            model_version,
-            num_images,
-            round(latency, 4),
-            status
-        ])
+    try:
+        with open(LOG_FILE, "a", newline="") as f:
+            csv.writer(f).writerow([
+                datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                model_version,
+                num_images,
+                round(latency, 4),
+                status
+            ])
+    except PermissionError:
+        # Windows file lock when dashboard is reading
+        pass

@@ -26,11 +26,11 @@ from src.inference import generate_images
 # Streamlit UI
 # -------------------------------------------------
 st.set_page_config(
-    page_title="Vanilla GAN – Deployment Demo",
+    page_title="Vanilla GAN – Deployment",
     layout="wide"
 )
 
-st.title("Vanilla GAN – Real PyTorch Inference")
+st.title("Vanilla GAN – Interface")
 
 num_images = st.slider("Number of images", 1, 20, 5)
 randomness = st.slider("Randomness", 0.1, 1.5, 1.0)
