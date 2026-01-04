@@ -1,7 +1,7 @@
 ### 📌 Project-1: Integrated GAN Pipeline (All Modules)
 ### **🔹 Overview**
 
-**This pull request integrates all individual project modules into a single, working end-to-end GAN system with training, inference, deployment, and monitoring.
+**This push request integrates all individual project modules into a single, working end-to-end GAN system with training, inference, deployment, and monitoring.
 All team members contributed their respective modules, and the final system was connected, stabilized, and future-proofed.**
 
 ### 👥 Team Contributions
@@ -73,4 +73,5 @@ _**KARNATI SIVA SAI REDDY**_
 - Additional features (dashboard, structured packaging) go beyond minimum specifications
 - Contributions reflect team effort with transparent ownership
 - Faculty was informed in advance about module redistribution due to absenteeism
+
 
