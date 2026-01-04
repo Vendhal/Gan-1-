@@ -1,77 +1,116 @@
-### 📌 Project-1: Integrated GAN Pipeline (All Modules)
-### **🔹 Overview**
+## 📌 Project-1: Synthetic Image Generator using Vanilla GAN
 
-**This push request integrates all individual project modules into a single, working end-to-end GAN system with training, inference, deployment, and monitoring.
-All team members contributed their respective modules, and the final system was connected, stabilized, and future-proofed.**
+**(Integrated End-to-End System)**
 
-### 👥 Team Contributions
-### Module 1 – Data Preparation & Preprocessing
+### 🔹 Overview
 
-**_ADIRALA   THENEESHA_**
+This project integrates all individual modules into a **single, working end-to-end Vanilla GAN system** covering:
 
-- Dataset organization and preprocessing pipeline
-- Image handling and preparation for GAN training
-- Future-proofed structure for dataset scalability
+* Data preparation & preprocessing
+* GAN model design
+* Training & inference
+* Deployment
+* Monitoring & logging
 
-### Module 2 – GAN Core (Training & Inference)
+All team members contributed their respective modules. The final system was **connected, stabilized, and future-proofed** into a unified pipeline suitable for real-world privacy-preserving image generation, as required in the Project-1 specification.
 
-**_KAMBHAMPATI SAI SANDEEP_**
+---
 
-- Vanilla GAN architecture implementation
-- Training loop, loss handling, and inference pipeline
-- Model saving/loading and reproducibility support
-- Future-proofed model interfaces
+## 👥 Team Contributions (Module-wise)
 
-### Module 3 – Model Evaluation
+### **Module 1 – Data Pipeline & Preprocessing**
 
-**_MALLINA SRI SAI LOVA TEJENDRA_**
+**ADIRALA THENEESHA**
 
-- Evaluation logic for generated images
-- Performance tracking hooks
-- Structured code for future metric extensions
+* Dataset organization and preprocessing pipeline
+* Image normalization and formatting for GAN input
+* Config-driven preprocessing using YAML
+* Dataset structure designed for scalability and future reuse
 
-### Module 4 – Optimization & Improvements
+---
 
-_**KARNATI SIVA SAI REDDY**_
+### **Module 2 – Model Design (Vanilla GAN Architecture)**
 
-- Architectural refinements and performance improvements
-- Training stability considerations
-- Code prepared for future tuning and experimentation
+**KAMBHAMPATI SAI SANDEEP**
 
-### Module 5 – Deployment
+* Vanilla GAN architecture (Generator & Discriminator)
+* Loss formulation and optimizer configuration
+* Model interfaces designed for clean training and inference separation
+* Code structured for reproducibility and extensibility
 
-**_KAMBHAMPATI SAI SANDEEP_** 
-**(taken over due to teammate (**_AAKASH GUMMADI_**) unavailability; faculty was informed in advance)**
+> **Note:**
+> Although the specification mentions Keras as an example, **PyTorch was used instead** because:
+>
+> * PyTorch is industry-standard for GAN research and experimentation
+> * It offers clearer control over training, inference, and deployment
+> * The underlying Vanilla GAN principles remain identical and fully compliant with the specification
 
-- Streamlit-based deployment interface
-- End-to-end inference deployment
-- Packaging using src/ module structure
-- Production-ready execution flow
+---
 
-### Module 6 – Monitoring & Logging
+### **Module 3 – Model Evaluation**
 
-**_KAVALA  SAI VENKATA  SURYANARAYANA_**
+**MALLINA SRI SAI LOVA TEJENDRA**
 
-- Logging of inference metadata (latency, status, requests)
-- CSV-based monitoring pipeline
-- Code structured for extensibility
+* Evaluation logic for generated images
+* Performance tracking hooks
+* Code structured to allow future metrics such as FID or diversity scores
 
-### 🔗 Integration & Enhancements
+---
 
-- End-to-end integration of all modules into a single runnable system.
-- Added Monitoring Dashboard (Streamlit) to visualize.
-- Total requests.
-- Inference latency.
-- Failure counts.
-- Introduced a clean src/ package architecture.
-- Improved folder structure, logging, and execution reliability.
-- Applied future-proofing practices across modules for scalability and maintenance.
+### **Module 4 – Optimization & Improvements**
 
-### ✅ Notes for Evaluation
+**KARNATI SIVA SAI REDDY**
 
-- All core project requirements are satisfied
-- Additional features (dashboard, structured packaging) go beyond minimum specifications
-- Contributions reflect team effort with transparent ownership
-- Faculty was informed in advance about module redistribution due to absenteeism
+* Architectural refinements and performance considerations
+* Training stability improvements
+* Code prepared for future tuning and experimentation
 
+---
 
+### **Module 5 – Deployment Layer**
+
+**KAMBHAMPATI SAI SANDEEP**
+*(taken over due to teammate **AAKASH GUMMADI** being unavailable; faculty was informed in advance)*
+
+* Streamlit-based deployment interface
+* End-to-end inference deployment
+* Clean `src/` package structure for execution
+* Production-ready inference flow (model loading, caching, normalization)
+
+---
+
+### **Module 6 – Monitoring & Logging**
+
+**KAVALA SAI VENKATA SURYANARAYANA**
+
+* CSV-based logging of inference metadata
+* Monitoring of:
+
+  * Inference latency
+  * Request count
+  * Failure cases
+* Code structured for future monitoring extensions
+
+---
+
+## 🔗 Integration & Enhancements
+
+* Integrated all modules into **one runnable pipeline**
+* Introduced a clean **`src/` package architecture**
+* Added:
+
+  * Monitoring dashboard (Streamlit)
+  * Inference logging & reports
+* Improved folder structure, execution reliability, and maintainability
+* Applied **future-proofing practices** across modules (config files, modular design, versioning support)
+
+---
+
+## ✅ Notes for Evaluation
+
+* All **core requirements of Project-1 are satisfied**
+* Vanilla GAN principles strictly followed
+* Choice of PyTorch is **implementation-level**, not conceptual deviation
+* Additional features (dashboard, structured packaging, monitoring) go **beyond minimum specifications**
+* Contributions are clearly documented with transparent ownership
+* Faculty was informed in advance about module redistribution due to absenteeism
